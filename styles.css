@@ -25,7 +25,7 @@ p {
     width: 150px;
     height: 150px;
     border-radius: 50%;
-    border : 4px solid yellow;
+    border: 4px solid yellow;
     overflow: hidden;
     margin-bottom: 10px;
     transition: transform 0.3s ease-in-out;
@@ -92,6 +92,7 @@ h3 {
     width: calc(33.33% - 40px);
     min-width: 250px;
     margin-bottom: 20px;
+    align-items: center;
 }
 
 .card:hover {
@@ -255,4 +256,61 @@ footer p {
         padding: 10px 15px; /* Adjust padding to prevent overflow */
         box-sizing: border-box; /* Ensure padding and width don't cause overflow */
     }
+}
+
+/* Additional CSS for Modal and Scroll-to-Top Button */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.9);
+}
+
+.modal img {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+}
+
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.scroll-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none;
+    background-color: #ffaa00;
+    color: #333;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.scroll-to-top:hover {
+    background-color: #ffdd00;
 }
